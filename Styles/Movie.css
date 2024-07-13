@@ -140,14 +140,14 @@ transition: color 0.3s;
     }
  }
  .popular-movies{
-    padding: 50px;
+    padding: 50px 0px;
     text-align: center;
     h2{
         font-size: 36px;
         margin-bottom: 20px;
     }
  }
- .popular-movies-container{
+ .popular-movie-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
