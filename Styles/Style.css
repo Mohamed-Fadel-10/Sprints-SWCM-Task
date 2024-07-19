@@ -27,6 +27,28 @@ body{
 
 }
 
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+#menu-toggle{
+    display: none;
+}
+#menu-toggle:checked + .menu-icon + nav ul{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 20px;
+    top: 40px;
+    width: 100%;
+    left: 0;
+    background-color: #333;
+
+}
 nav ul{
     list-style: none;
     display: flex;
@@ -120,4 +142,46 @@ footer{
     padding: 10px;
     width: 100%;
     margin: 0;
+}
+@media(max-width:1024px){
+    .menu-icon{
+        display: block;
+        position: absolute;
+        right: 30px;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+        padding: 0;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+.info-section, .movie-section,.top-movies-section,.form-section{
+    margin: 20px;
+    padding: 20px;
+    h2{
+        font-size: 18px;
+    }
+    p,li{
+        font-size: 12px;
+    }
+}
+.info-section{
+    margin-top: 100px;
+}
+}
+@media(max-width:800px){
+    .movie-table th , .movie-table td{
+        padding: 8px;
+    }
+}
+@media(max-width:600px){
+    .info-section, .movie-section,.top-movies-section,.form-section{
+        margin: 20px;
+        padding: 20px;
+    }
+    .info-section{
+        margin-top: 100px;
+    }
 }
